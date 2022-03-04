@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PhotoMultiCropper : 單圖多裁</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="lib/reset.css" />
+    <link rel="stylesheet" href="assets/app.css" />
+    <link rel="stylesheet" href="lib/jcrop.css" />
+    <script src="lib/jcrop.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>PhotoMultiCropper</h1>
+      <div id="container">
+        <div id="photo">
+          <div id="photoHint" class="step">
+            <span>0. </span>
+            將圖片檔案 (JPG/JPEG/PNG) 拖放至此，並拖曳選擇裁切範圍。
+            <br />
+            <br />
+            <br />
+            * 注意：輸出目標資料夾為拖曳之檔案目錄。
+          </div>
+          <img id="target" src="" width="900px;" />
+        </div>
+        <div id="menu">
+          <div class="step">
+            <span>1. </span> 確任裁切範圍<br />
+            <button id="cropBtn">新增裁切</button>
+            <button id="updateBtn">修改裁切範圍</button>
+            <div id="cropHints" >
+              <div id="nameBtn"></div>
+              <br />
+              <div id="hint"></div>
+              <div id="hint2"></div>
+              <br />
+            </div>
+          </div>
+          <div class="step">
+            <span>2. </span> 設定輸出檔名
+            <input type="text" id="inputName" placeholder="輸出檔名(以,隔開)" />
+            <button id="renameBtn">更新命名</button>
+          </div>
+          <div class="step">
+            <span>3. </span>
+            輸出裁切
+            <div id="outputFormat">
+              <span>格式：</span>
+              <select id="fileExt">
+                <option value="jpg">JPG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="png">PNG</option>
+              </select>
+            </div>
+            <button id="cropDone">輸出</button>
+            <button id="reloadBtn">清除</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/renderer.js"></script>
+  </body>
+</html>

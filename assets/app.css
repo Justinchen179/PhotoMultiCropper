@@ -1,0 +1,87 @@
+#app {
+    margin: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    width: 1250px;
+}
+
+#photo {
+    width: 900px;
+}
+
+#menu {
+    width: 300px;
+    padding: 0 25px;
+}
+
+#updateBtn {
+    visibility: hidden;
+}
+
+.step {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+    border: 1px solid #999;
+    padding: 9px 9px;
+    font-size: 22px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button {
+    border: 1px solid #999;
+    padding: 3px 9px;
+    margin: 9px 0;
+    font-size: 20px;
+}
+
+select {
+    border: 1px solid #999;
+    padding: 3px 9px;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.step span {
+    font-size: 30px;
+}
+
+#photoHint.step {
+    border: none;
+    padding: 80px 50px;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    height: 320px;
+}
+
+#photoHint span {
+    font-size: 40px;
+}
+
+#cropHints {
+    font-size: 18px;
+}
+
+#cropHints button {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#outputFormat span{
+    font-size: 18px;
+}

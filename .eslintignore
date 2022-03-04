@@ -1,0 +1,7 @@
+/public
+/src/public
+/node_modules/*
+/**/*.css
+package.json
+/**/*.test.js
+/lib
